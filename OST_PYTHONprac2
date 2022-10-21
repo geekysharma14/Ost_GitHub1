@@ -1,0 +1,27 @@
+#mixed data type
+d=int(input("Enter the no. of element you want to add in the list : "))
+l=0
+list11=[]
+while l<=d:
+    x=input("enter the ou want to add in list : ")
+    list11.append(x)
+    l+=1
+print(list11)
+spl_char_list=[]
+char_list=[]
+num_list=[]
+bool_list=[]
+for i in list11:
+    if i.isnumeric()==True:
+        a=int(i)
+        num_list.append(a)
+    elif i.isalpha()==True and i!="True" andi!="False":
+        char_list.append(i)
+    elif i=='True' or i =='False':
+        bool_list.append(i)
+    else:
+        spl_char_list.append(i)   
+print(num_list)
+print(char_list)
+print(bool_list)
+print(spl_char_list)
