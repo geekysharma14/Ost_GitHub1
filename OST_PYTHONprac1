@@ -1,0 +1,122 @@
+#a
+str4="Hey there! what should this string be?"
+z=len(str4)
+print(z)
+
+#b
+for i in str4:
+     if i=="a":
+          x=str4.index(i)
+          print(x)
+          break
+#c
+a=0
+for i in str4:
+     if i=="a":
+          a+=1
+print("a had occured",a,"times")
+
+#d
+print(str4[0:5])
+
+#e
+print(str4[6:11])
+#f
+print(str4[13:14])
+#g
+print(str4[-5:])
+#h
+print(str4.upper())
+#i
+print(str4.lower())
+#j
+for i in str4:
+     print(i)
+#k
+for i in str4:
+     if i.isdigit():
+          print(i,"is number")
+     else:
+          print(i,"is not a number")
+#l
+for i in str4:
+     if i.isalpha():
+          print(i,"is an alphabet")
+     else:
+          print(i,"is not an alphabet")
+#m
+for i in str4:
+     if i.islower():
+          print(i,"is in lowercase")
+     else:
+          print(i,"is not in lowercase")
+#n
+for i in str4:
+     if i.isupper():
+          print(i,"is in uppercase")
+     else:
+          print(i,"is not in uppercase")
+#o
+str4=list(str4)
+print(str4)
+a=0
+while a<len(str4):
+     if str4[a]=="!":
+          str4[a]=","
+     a+=1
+print(str4)         
+str5=" "
+for i in str4:
+     str5 +=i
+     
+print(str5)
+
+         
+#p
+tup1=( 'a','n',3,4,5,7.8,12,True)
+print(tup1)
+#q
+tup1=list(tup1)
+print(tup1)
+#r
+tup2=list(tup1)
+tup2[-1]="False"
+tup2=tuple(tup2)
+print(tup2)
+#s
+ch_tuple=tup2
+print(ch_tuple)
+#t
+tup1=( 'a','n',3,4,5,7.8,12,True)'''
+ch_tuple=('a','n',3,4,5,7.8,12,False)
+for i in tup1:
+     for a in ch_tuple:
+          if i==a:
+               print("The elements are equal")
+          else:
+               print("The elements are not equal")
+#u
+print(ch_tuple*3)
+#v
+print(len(ch_tuple))
+#w
+ch_tuple=list(ch_tuple)
+list6=["how"," you know!",3,5,6,5,4,8,"s","g","h","h"]
+ch_tuple.extend(list6)
+print(ch_tuple)
+print(ch_tuple.count(5))
+#x
+for i in ch_tuple:
+     print(type(i))
+
+#y
+z=[]
+c=int(input("entre number of element you want to insert :"))
+i=0
+while i<c:
+     f=input("enter the element you want to insert: ")
+     z.append(f)
+     i+=1
+
+z=tuple(z)
+print(z)
